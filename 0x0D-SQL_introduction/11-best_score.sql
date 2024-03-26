@@ -1,6 +1,6 @@
--- Lists all records in the table second_table with a score >= 10 in my MySQL server.
--- Records are ordered by descending score.
-SELECT `score`, `name`
-FROM `second_table`
-WHERE `score` >= 10
-ORDER BY `score` DESC;
+-- Lists all the names and scores in the second_table
+-- where the score is greater than or equal to 10.
+-- The results are sorted by score in descending order.
+SELECT score, name FROM second_table
+WHERE score >= 10
+ORDER BY score DESC
